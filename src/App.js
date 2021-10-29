@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import ContactForm from './components/Contact';
 import Portfolio from './components/Portfolio';
 
+
 function App() {
   const [contactSelected, setContactSelected] = useState(false);
   return (
@@ -14,7 +15,7 @@ function App() {
       contactSelected={contactSelected}
       setContactSelected={setContactSelected}
       ></Navbar>
-    {<main className="content">
+     {<main className="content">
         {!contactSelected ? (
           <>
           <About></About>
@@ -24,19 +25,10 @@ function App() {
           <ContactForm></ContactForm>
         )}
         </main>}
+
         <Footer></Footer>
         </div>
   );
 }
-
-      /* {<main className="content">
-        {!contactSelected ? (
-          <>
-          <About></About>
-          </>
-        ) : (
-          <ContactForm></ContactForm>
-        )}
-        </main>} */
 
 export default App;
