@@ -12,9 +12,11 @@ function ContactForm(){
         if(e.target.name === 'email'){
             const isValid = validateEmail(e.target.value);
             if(!isValid){
+              
                 setErrorMessage('Your email is invalid');
             } else {
                 if(!e.target.value.length){
+                    console.log('invalid');
                     setErrorMessage(`${e.target.name} is required`);
                 } else {
                     setErrorMessage('');
@@ -27,7 +29,7 @@ function ContactForm(){
     }
     function submitHandler(e){
         e.preventDefault();
-        console.log(formState);
+        //console.log(formState);
     }
 
     return (
@@ -36,11 +38,11 @@ function ContactForm(){
             <form id="contact-form" onSubmit={submitHandler}>
                 <div>
                     <label htmlFor="name">Your Name: </label>
-                    <input type="text" onblur={changeHandler} name="name" defaultValue={name}/>
+                    <input type="text" onBlur={changeHandler} name={name} defaultValue={name}/>
                 </div>
                 <div>
                     <label htmlFor="email">Email:</label>
-                    <input type="email" name="email" defaultValue={email} onblur={changeHandler}/>
+                    <input type="email" name="email" defaultValue={email} onBlur={changeHandler}/>
                 </div>
                 <div>
                     <label htmlFor="message">Message: </label>

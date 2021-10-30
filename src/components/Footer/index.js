@@ -23,7 +23,7 @@ function Footer(){
                     <a href={links.stackOverflow} className="mx-2"> <FaIcons.FaStackOverflow /> StackOverflow</a>
                 </li>
                 <li>
-                    <a href={links.resume}  className="mx-2"> <FaIcons.FaFileAlt /> Resume</a>
+                    <a href={links.resume}  className="mx-2"> <FaIcons.FaFileAlt /> Download Resume pdf</a>
                 </li>
             </ul>
         </footer>

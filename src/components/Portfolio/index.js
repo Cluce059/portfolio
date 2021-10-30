@@ -1,10 +1,11 @@
 import React from 'react';
 import ProjectList from '../ProjectList';
 
+
 function Portfolio(props){
     //const { currentProject } = props;
     return (
-        <section>
+        <section className="portfolio-section" id="portfolio">
             <h2>My Portoflio</h2>
             <ProjectList/>
         </section>
@@ -12,3 +13,4 @@ function Portfolio(props){
 }
 
 export default Portfolio;
+

@@ -4,15 +4,14 @@ import pfp from '../../assets/img/pfp.jpg';
 function About(){
     return (
         <section className="my-5">
-            <img src = {pfp} className="my-2" style={{width: "20%"}} alt="profilePic"/>
+            <div className="pfp-div">
+                <img src = {pfp} className="my-2" style={{width: "20%"}} alt="profilePic"/>
+            </div>
             <h1 id="about">Background</h1>
-                <p>Hello, my name is Caroline and I hate this old pic but its the only professional looking one i have rn some space with text until I know what to say here. This could be just a few sentences about my education/certificates and experience so far doing the bootcamp?</p>
+                <p>Hello! My name is Caroline and I am excited to share with you my background and experience. I graduated from the University of Central Florida last May with a bachelor's degree in Environmental Studies and a certificate in Geographic Information Systems. I have many endeavors from making glass art in my spare time to continuing my education in computer science. After a busy day, I like to take time off to play games and have coffee on my porch with my cat. Reach out via phone or email if you have any questions or just want to say hey!</p>
             <h1>Education</h1>
                 <p>UCF Bachelor of Science in Environmental Studies with Geographic Information Systems Certificate</p>
                 <p>current coding bootcamp student</p>
-            <h1>Skills</h1>
-                <p>possibly leave this in resume? 2 much? idk</p>
-            
         </section>
     );
 }

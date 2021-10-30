@@ -5,6 +5,8 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer';
 import ContactForm from './components/Contact';
 import Portfolio from './components/Portfolio';
+import Resume from './components/Resume';
+
 
 
 function App() {
@@ -20,10 +22,12 @@ function App() {
           <>
           <About></About>
           <Portfolio></Portfolio>
+          <Resume></Resume>
           </>
         ) : (
           <ContactForm></ContactForm>
         )}
+    
         </main>}
 
         <Footer></Footer>
