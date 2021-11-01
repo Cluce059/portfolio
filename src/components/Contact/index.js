@@ -35,6 +35,8 @@ function ContactForm(){
     return (
         <section>
             <h1>Get in Touch</h1>
+            <h3>Cell: (850)408-6736</h3>
+            <h3>email: Cluce059@gmail.com</h3>
             <form id="contact-form" onSubmit={submitHandler}>
                 <div>
                     <label htmlFor="name">Your Name: </label>

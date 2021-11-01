@@ -25,12 +25,50 @@ main {
   padding: 0;
 }
 
+.project-icon{
+  font-size: 25px;
+  text-decoration: none;
+}
+
+
 .Bio, .Contact, .Portfolio {
   border-top: 2px solid;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 3rem;
+}
+
+.pfp-div{
+  --borderWidth: 3px;
+  position: relative;
+  border-radius: var(--borderWidth);
+  height: 100%;
+}
+
+#box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 300px;
+  color: white;
+  font-family: 'Raleway';
+  font-size: 2.5rem;
+}
+
+.pfp-div:after{
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #242c50, #1e445e, #68285f, #a166ab, #5073b8, #1c5861, #69305d, #460614);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
 }
 
 .resume-section{
@@ -87,7 +125,9 @@ header a {
 
 .hero{
   margin: inherit;
-  padding: 17%;
+  padding: 8%;
+  margin-left: 25px;
+  margin-right: 25px;
   background-image: url(./assets/img/hero.jpg);
   /* 
    display: flex;
@@ -119,12 +159,9 @@ button[disabled] {
 }
 
 img {
-  max-width: 55%;
+  max-width: 100%;
 }
 
-span[role="img"] {
-  cursor: default;
-}
 
 input {
   font-size: 1rem;
@@ -170,6 +207,7 @@ textarea {
 .flex-row {
   display: flex;
   flex-wrap: wrap;
+  padding: 18px;
   justify-content: space-around;
 }
 
@@ -275,4 +313,23 @@ a {
 .project {
   flex-grow: 4;
   align-self: auto;
+}
+
+.captions {
+  font-size: inherit;
+}
+
+
+
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

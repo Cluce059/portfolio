@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaUser, FaFileAlt, FaProjectDiagram, FaMobileAlt  } from 'react-icons/fa';
-import resume from '../../assets/files/Luce_Resume.A.pdf';
+
 
 function Nav(props){
 

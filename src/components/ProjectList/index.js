@@ -1,4 +1,8 @@
 import React from "react";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
+import {FaGithub} from 'react-icons/fa';
+import {MdExitToApp} from 'react-icons/md';
 
 const ProjectList =() => {
     //leave open bc use will initialize 
@@ -54,12 +58,39 @@ link: '/'
     ];
 
    return (
-     <div className="project-container">
-         <div>
-         {projects.map((project)=> (
+     <div className="carousel-wrapper">
+     
+         <div className="project-container">
+         <Carousel>
+         {projects.map((project)=> (   
+                  <figure>
+                      <img
+                  src={require(`../../assets/img/${project.i}.png`).default}
+                  alt={project.alt}
+                  key={project.name}
+                  ></img>
+                  <figcaption>
+                      {project.name} : <span>{project.description}</span>
+                      </figcaption>
+                      <figcaption className="captions"><a className="project-icon" href={project.repo}> <FaGithub /> </a>
+                      <a className="project-icon"href = {project.link}><MdExitToApp /> </a></figcaption>
+                  </figure>
+                  
+          ))}
+           </Carousel>
+        </div>
+
+     </div>
+    );
+};
+
+
+export default ProjectList;
+
+/** {
+ * {projects.map((project)=> (
               <li className="project">
                   {project.name}
-                  key={project.name}
                   <img 
                   src={require(`../../assets/img/${project.i}.png`).default}
                   alt={project.alt}
@@ -70,31 +101,6 @@ link: '/'
                       <a href={project.repo}>Github Repo</a>
               </li>
           ))}
-              </div>
-     </div>
-  
-    );
-};
-
-export default ProjectList;
-
-/** {
- * {projects.map((project)=> (
-              
-            <li className="project">
-                {project.name}
-               
-                <img 
-                src={require(`../../assets/img/${project.i}.png`).default}
-                alt={project.alt}
-                key={project.name}
-                ></img>
-                    <span> {project.description} </span>
-                    <a href ={project.link}>Vist</a>
-                    <a href={project.repo}>Github Repo</a>
-            </li>
-        ))}
- * 
  * 
  * 
             name: 'Fitness Buddy',
