@@ -1,5 +1,3 @@
-/*go through these guys and see which classNames u like to keep n styling etc*/
-/*crop pfp when u get the chance*/
 main {
 	margin: 0 auto;
 	max-width: 90%;
@@ -7,7 +5,7 @@ main {
 }
 :root {
   --primary: #623caf;
-  --secondary: #46026d;
+  --secondary: #32385D;
   --tertiary: #0f0533;
   --light: #fafafa;
   --dark: #0f0a11;
@@ -26,10 +24,28 @@ main {
 }
 
 .project-icon{
-  font-size: 25px;
+  font-size: 25px; 
   text-decoration: none;
+  /*transition: all .2s ease-in-out; /*duration prop*/
 }
+/*
+.project-icon:hover {
+    transform: scale(1.1);
+}
+/* .grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+  */
 
+/* .project-icon:hover{
+  background-color: var(--light);
+} */
+
+.bio-content{
+  display: grid;
+  display: table-cell;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
 
 .Bio, .Contact, .Portfolio {
   border-top: 2px solid;
@@ -46,11 +62,21 @@ main {
   height: 100%;
 }
 
+.pfp-div-container{
+  padding-left: 31rem;
+  align-items: baseline;
+}
+
+figcaption{
+  padding: .75rem;
+  font-size: 1.25rem;
+}
+
 #box{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 250px;
+  width: 210px;
   height: 300px;
   color: white;
   font-family: 'Raleway';
@@ -64,15 +90,18 @@ main {
   left: calc(-1 * var(--borderWidth));
   height: calc(100% + var(--borderWidth) * 2);
   width: calc(100% + var(--borderWidth) * 2);
-  background: linear-gradient(60deg, #242c50, #1e445e, #68285f, #a166ab, #5073b8, #1c5861, #69305d, #460614);
-  border-radius: calc(2 * var(--borderWidth));
-  z-index: -1;
-  animation: animatedgradient 3s ease alternate infinite;
+  /*background: linear-gradient(60deg, #242c50, #1e445e, #68285f, #a166ab, #5073b8, #1c5861, #69305d, #460614);
+  */
+  background-image: url(./assets/img/hero.jpg);
+  border-top: calc(2 * var(--borderWidth));
+  z-index: 0;
+  animation: animatedgradient 15s ease alternate infinite;
   background-size: 300% 300%;
 }
 
 .resume-section{
   border-top: 2px solid;
+  padding: 35px;
 }
 
 html,
@@ -83,6 +112,7 @@ body {
 body {
   margin: 0;
   padding: 0;
+  display:grid;
   font-weight: 600;
   line-height: 1.5;
   font-size: 18px;
@@ -112,7 +142,12 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: var(--primary);
+  text-decoration: none;
 }
 
 header {
@@ -129,10 +164,11 @@ header a {
   margin-left: 25px;
   margin-right: 25px;
   background-image: url(./assets/img/hero.jpg);
-  /* 
-   display: flex;
-   flex-wrap: wrap;
-  justify-content: center; */
+  display: grid;
+  align-items: center;
+
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat();
   background-attachment: fixed;
   background-position: -155%;
 }
@@ -179,11 +215,6 @@ input:focus {
 
 li {
   list-style: none;
-}
-
-nav a:hover {
-  text-decoration: none;
-  text-decoration: underline;
 }
 
 nav  li {
