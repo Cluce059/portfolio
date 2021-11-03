@@ -6,7 +6,7 @@ function About(){
         <section className="bio-content my-5">
             <div className="pfp-div-container">
             <div className="pfp-div" id="box">
-                <img src = {pfp}   alt="profilePic"/>
+                <img src = {pfp}   alt="profilePic" className="pfp"/>
             </div>
             </div>
             <h1 id="about">Background</h1>

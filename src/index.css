@@ -15,6 +15,7 @@ main {
   --spacing-one: calc(2.5rem * 1.5);
   --spacing-two: calc(3rem);
   --spacing-five: calc(1rem);
+
 }
 
 * {
@@ -86,17 +87,18 @@ figcaption{
 .pfp-div:after{
   content: '';
   position: absolute;
-  top: calc(-1 * var(--borderWidth));
+  top: calc(6.5 * var(--borderWidth));
   left: calc(-1 * var(--borderWidth));
-  height: calc(100% + var(--borderWidth) * 2);
+  height: calc(85% + var(--borderWidth) * 2);
   width: calc(100% + var(--borderWidth) * 2);
-  /*background: linear-gradient(60deg, #242c50, #1e445e, #68285f, #a166ab, #5073b8, #1c5861, #69305d, #460614);
-  */
-  background-image: url(./assets/img/hero.jpg);
+  background: linear-gradient(60deg, #eea9df, #e367e7, #ba62d4, #553d94, #260e52, #4e0e4e, #a1388b, #88253a);
+  
+  /*background-image: url(./assets/img/hero.jpg);*/
   border-top: calc(2 * var(--borderWidth));
-  z-index: 0;
+  z-index: -1;
   animation: animatedgradient 15s ease alternate infinite;
   background-size: 300% 300%;
+  border-radius: 2rem;
 }
 
 .resume-section{
@@ -186,7 +188,7 @@ button {
 }
 
 button:hover {
-  opacity: .8;
+  background-color: var();
 }
 
 button[disabled] {
@@ -198,6 +200,9 @@ img {
   max-width: 100%;
 }
 
+.pfp{
+  border-radius: 25rem;
+}
 
 input {
   font-size: 1rem;
@@ -251,12 +256,13 @@ textarea {
 }
 
 
-
+/*header items*/
 .mx-2 {
   margin-right: var(--spacing-two);
   margin-left: var(--spacing-two);
 }
 
+/*footer items*/
 .mx-2:hover {
   color: var(--secondary);
 }
@@ -349,8 +355,6 @@ a {
 .captions {
   font-size: inherit;
 }
-
-
 
 
 @keyframes animatedgradient {
