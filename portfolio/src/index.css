@@ -154,6 +154,10 @@ nav a:hover {
 
 header {
   background: var(--dark);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
 }
 
 header a {
@@ -211,6 +215,8 @@ input {
   outline: none;
   border-radius: 3px;
   transition: box-shadow 0.2s;
+  border: 3px solid #0e080d;
+  background-color:  #b39baf;
 }
 
 input:focus {
@@ -229,9 +235,12 @@ nav  li {
 textarea {
 	width: 600px;
 	height: 120px;
-	border: 3px solid #cccccc;
+	border: 3px solid #0e080d;
 	padding: 5px;
+	border: 3px solid;
+  background-color:  #b39baf;
 }
+
 
 .container {
   width: 85%;
