@@ -8,8 +8,6 @@ import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
 import Header from './components/Header';
 
-
-
 function App() {
   const [contactSelected, setContactSelected] = useState(false);
   return (

@@ -12,18 +12,18 @@ function Footer(){
     }
     return (
         <footer>
-            <ul className="flex-row">
+            <ul >
                 <li>
-                    <a href={links.github} className="mx-2"> <FaIcons.FaGitAlt /> Github</a>
+                    <a href={links.github} > <FaIcons.FaGitAlt /> Github</a>
                 </li>
                 <li >
-                    <a href={links.linkedIn}className="mx-2"> <FaIcons.FaLinkedin /> LinkedIn</a>
+                    <a href={links.linkedIn}> <FaIcons.FaLinkedin /> LinkedIn</a>
                 </li>
                 <li>
-                    <a href={links.stackOverflow} className="mx-2"> <FaIcons.FaStackOverflow /> StackOverflow</a>
+                    <a href={links.stackOverflow} > <FaIcons.FaStackOverflow /> StackOverflow</a>
                 </li>
                 <li>
-                    <a href={links.resume}  className="mx-2"> <FaIcons.FaFileAlt /> Download Resume pdf</a>
+                    <a href={links.resume}  > <FaIcons.FaFileAlt /> Download Resume pdf</a>
                 </li>
             </ul>
         </footer>

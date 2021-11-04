@@ -5,10 +5,13 @@ function Header(props){
     const { contactSelected, setContactSelected } = props;
  
     return (
-     <section className="header">
+        <header>
+        <h1 data-testid="link" href="/">
+            Caroline Luce
+        </h1>
          <Navbar   contactSelected={contactSelected}
       setContactSelected={setContactSelected}></Navbar>
-     </section>
+     </header>
  );
 };
 
