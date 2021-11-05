@@ -4,7 +4,7 @@ import resume from '../../assets/files/Luce_Resume.A.pdf';
 function Resume(){
     return (
         <section className="resume-section" id="resume">
-        <h2 className="flex-row">Resume</h2>
+        <h1 className="flex-row">Resume</h1>
         <h2 className="flex-row">Proficiencies</h2>
         <ul>
             <li>Javascript and also JSX with React</li>

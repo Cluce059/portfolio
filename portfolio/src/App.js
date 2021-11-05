@@ -7,6 +7,7 @@ import ContactForm from './components/Contact';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
 import Header from './components/Header';
+import Hero from './components/Hero';
 
 function App() {
   const [contactSelected, setContactSelected] = useState(false);
@@ -15,6 +16,7 @@ function App() {
     <div className="wrapper">
       <Header contactSelected={contactSelected}
       setContactSelected={setContactSelected}></Header>
+      <Hero />
      {<main className="content">
         {!contactSelected ? (
           <>
