@@ -30,7 +30,6 @@ function Nav(props){
                 </div>
             </nav>
        
-        <section className="hero"></section>
         </>
     );
 }
