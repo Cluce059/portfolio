@@ -1,5 +1,5 @@
 import React from 'react';
-import resume from '../../assets/files/Luce-resume.B.pdf';
+import resume from '../../assets/files/Luce-resume.C.pdf';
 
 function Resume(){
     return (
