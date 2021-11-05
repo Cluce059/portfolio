@@ -60,6 +60,7 @@ link: '/'
     ];
 
    return (
+       <div className="projects">
      <div className="carousel-wrapper">
      
          <div className="project-container">
@@ -89,6 +90,7 @@ link: '/'
            </Carousel>
         </div>
 
+     </div>
      </div>
     );
 };
