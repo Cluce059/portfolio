@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.f9d235e4.chunk.css",
-    "main.js": "/portfolio/static/js/main.2d5cf921.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.2d5cf921.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.78f02529.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.78f02529.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.5a7e4bef.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.5a7e4bef.js.map",
     "static/css/2.ed1298f3.chunk.css": "/portfolio/static/css/2.ed1298f3.chunk.css",
@@ -20,7 +20,7 @@
     "static/media/3.png": "/portfolio/static/media/3.3af3859c.png",
     "static/media/4.png": "/portfolio/static/media/4.e969e1ec.png",
     "static/media/5.png": "/portfolio/static/media/5.d7bafef0.png",
-    "static/media/Luce_Resume.A.f57073c9.pdf": "/portfolio/static/media/Luce_Resume.A.f57073c9.pdf",
+    "static/media/Luce-resume.B.6cbd0325.pdf": "/portfolio/static/media/Luce-resume.B.6cbd0325.pdf",
     "static/media/pfp.0936a87f.jpg": "/portfolio/static/media/pfp.0936a87f.jpg",
     "static/media/portfoliov2ss.png": "/portfolio/static/media/portfoliov2ss.761a0ab8.png"
   },
@@ -29,6 +29,6 @@
     "static/css/2.ed1298f3.chunk.css",
     "static/js/2.faa2a530.chunk.js",
     "static/css/main.f9d235e4.chunk.css",
-    "static/js/main.2d5cf921.chunk.js"
+    "static/js/main.78f02529.chunk.js"
   ]
 }
