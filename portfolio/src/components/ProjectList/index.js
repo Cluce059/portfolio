@@ -1,6 +1,7 @@
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
+import {Carousel} from 'react-responsive-carousel';
+//perhaps dub this carousel lib and go for a css styled gallery that slides
 import {FaGithub} from 'react-icons/fa';
 import {MdExitToApp} from 'react-icons/md';
 
@@ -49,6 +50,15 @@ alt: 'weather tracking app',
 repo: 'https://github.com/Cluce059/weatherApp',
 link: 'https://cluce059.github.io/weatherApp/'
 },
+{
+    name: 'News Distillery',
+    description: '',
+    i: '6',
+    alt: 'News',
+    repo: 'https://github.com/Cluce059/fitness-buddy-v2',
+    link: 'https://news-distillery.herokuapp.com/'
+    },
+      
 {
 name: 'Portfolio v2',
 description: 'My second portfolio',

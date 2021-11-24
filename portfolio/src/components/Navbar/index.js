@@ -9,8 +9,6 @@ function Nav(props){
     <Nav>contactSelected={contactSelected} setContactSelected={setContactSelected}</Nav>
     return (
         <>
-       
-             
             <nav>
                 <div className="navbar-container">
                 <ul>

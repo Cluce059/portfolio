@@ -1,38 +1,35 @@
 import React, {useState} from 'react';
-import About from './components/About';
+import About from './pages/About';
 import './App.css';
-//import Navbar from './components/Navbar'
+import Navbar from './components/Navbar'
 import Footer from './components/Footer';
-import ContactForm from './components/Contact';
+import ContactForm from './pages/Contact';
+//import Portfolio from './pages/Portoflio';
+//import Cards from './components/Cards';
 import Portfolio from './components/Portfolio';
-import Resume from './components/Resume';
-import Header from './components/Header';
-import Hero from './components/Hero';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
-  const [contactSelected, setContactSelected] = useState(false);
+  //const [contactSelected, setContactSelected] = useState(false);
   return (
-    /**pass contact selected props to header to give to navbar items */
-    <div className="wrapper">
-      <Header contactSelected={contactSelected}
-      setContactSelected={setContactSelected}></Header>
-      <Hero />
-     {<main className="content">
-        {!contactSelected ? (
-          <>
-          <About></About>
-          <Portfolio></Portfolio>
-          <Resume></Resume>
-          </>
-        ) : (
-          <ContactForm></ContactForm>
-        )}
-    
-        </main>}
-
+    <div>
+      {/* link to close navbar must be in router? */}
+      <Router>
+      <Navbar
+      //contactSelected={contactSelected}
+      //setContactSelected={setContactSelected}
+      ></Navbar>
+      <Switch>
+        <Route path='/' exact component={About}/>
+        <Route path='/contact' exact component={ContactForm}/>
+      </Switch>
+      </Router>
+      <About />
+      <Portfolio />
         <Footer></Footer>
         </div>
   );
 }
+
 
 export default App;
